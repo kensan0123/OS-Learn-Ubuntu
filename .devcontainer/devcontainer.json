@@ -1,0 +1,18 @@
+{
+  "name": "OS-learn-ubuntu",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "os-learn-ubuntu",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "clang --version"
+}

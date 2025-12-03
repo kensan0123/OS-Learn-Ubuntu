@@ -1,0 +1,10 @@
+services:
+  os-learn-ubuntu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: os-learn-ubuntu
+    working_dir: /work
+    volumes:
+      - ./:/work
+    tty: true
